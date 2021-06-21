@@ -49,4 +49,10 @@ function deleteCheck(e) {
     todo.remove();
     // item.parentElement.remove();
   }
+
+  // Check mark
+  if (item.classList[0] === "complete-btn") {
+    const todo = item.parentElement;
+    todo.classList.toggle("completed");
+  }
 }
